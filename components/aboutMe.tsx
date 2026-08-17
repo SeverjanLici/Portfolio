@@ -5,10 +5,12 @@ import SectionHeading from './sectionHeading'
 export default function AboutMe() {
   return (
     <motion.section 
-      className="max-w-[45rem] text-center leading-8 "
+      className="max-w-[45rem] text-center leading-8 scroll-mt-25 mb-33"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
+      id="about"
+
     >
         <SectionHeading>About me</SectionHeading>
         <p className="mb-3">

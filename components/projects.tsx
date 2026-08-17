@@ -6,10 +6,9 @@ import { projectsData } from '@/lib/data'
 import { Project } from './project'
 
 
-
-export default function Projects() {
+export default function Projects() {  
   return (
-    <motion.section>
+    <section id="projects" className='scroll-mt-28 mb-28'>
         <SectionHeading>My projects</SectionHeading>
         <div>
           {
@@ -20,7 +19,7 @@ export default function Projects() {
             ))
           }
         </div>
-    </motion.section>
+    </section>
   )
 }
 

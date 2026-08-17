@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image'
-import { motion, scale, useScroll, useTransform } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
 import { projectsData } from '@/lib/data'
 
@@ -34,10 +34,11 @@ export function Project({ title, description, tags, imageUrl }: projectProps) {
     <p className="mt-2 leading-relaxed text-gray-700 ">{description}</p>
     <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">{
       tags.map((tag,index)=>(
-        <li className="bg-black/[0.7] px-3 py-1 text-[0.75rem] uppercase tracking-wider text-white rounded-full " key={index}>{tag}</li>
+        <li className="bg-black/[0.7] px-3 py-1 text-[0.75rem] 
+        uppercase tracking-wider text-white rounded-full " key={index}>{tag}</li>
       ))}</ul>
     </div>
-      <Image src={imageUrl} alt={"Project i worked on"} quality={93} 
+      <Image src={imageUrl} alt={"Projects i worked on"} quality={93} 
       className="absolute top-8 -right-40 w-[28.25rem] 
                 rounded-t-lg shadow-2xl group-even:-right-[initial] group-even:-left-40 
                 goup-hover:-translate-x-3 transition 

@@ -1,5 +1,6 @@
 import AboutMe from "@/components/aboutMe";
 import Intro from "@/components/intro";
+import Skills from "@/components/mySkills";
 import Projects from "@/components/projects";
 import SectionDivider from "@/components/sectionDivider";
 import { main } from "framer-motion/m";
@@ -10,7 +11,7 @@ export default function Home() {
     <Intro />
     <SectionDivider />
     <AboutMe />
-    <SectionDivider />
     <Projects />
+    <Skills />
   </main>
 }

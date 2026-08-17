@@ -3,9 +3,13 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { links } from "@/lib/data";
-import { link } from "framer-motion/m";
+import { link, text } from "framer-motion/m";
+import { useState } from "react";
+import clsx from "clsx";
 
 export default function Header() {
+  const [activeState, setActiveState] = useState("home");
+  
   return (
     <header className="relative z-50 flex justify-center">
       <motion.div
@@ -22,7 +26,12 @@ export default function Header() {
               animate={{ y: 0, opacity: 1 }}>
                 <Link
                   href={link.hash}
-                  className="transition hover:text-white"
+                  className={clsx(
+                    "transition hover:text-white text-shadow-gray-900",
+                    activeState === link.hash ? "text-white" : "text-white/90"
+                  )}
+                  
+                  onClick={() => setActiveState(link.hash)}
                 >
                   {link.name}
                 </Link>
