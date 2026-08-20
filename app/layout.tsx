@@ -10,8 +10,18 @@ const geistSans = Geist({
 
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://severjan-lici-portfolio.vercel.app"),
   title: "Severjan Lici's Portfolio",
   description: "The portfolio of Severjan Lici, a software engineer and web developer.",
+  openGraph: {
+    title: "Severjan Lici's Portfolio",
+    description: "The portfolio of Severjan Lici, a software engineer and web developer.",
+    images: ["/PortfolioThumbnail.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/PortfolioThumbnail.jpg"],
+  },
 };
 
 export default function RootLayout({
