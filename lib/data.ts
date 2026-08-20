@@ -102,5 +102,7 @@ export const skillsData = [
   "Framer Motion",
   "Kotlin",
   "Spring Boot",
+  "C",
+  "Java"
 
 ] as const;
