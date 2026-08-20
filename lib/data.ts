@@ -56,6 +56,7 @@ export const projectsData = [
       "Website for reporting any issues needing fixing in the city. People can report issues along with photos, locations, descriptions and types for the municipality to fix them.",
     tags: ["React", "Tailwind", "Python","JavaScript","HTML","CSS", "Swagger/OpenAPI", "Docker", "Bash","Redis", "Agile(YouTrack)"],
     imageUrl: ParticipiumImg,
+    repoUrl: "https://github.com/SeverjanLici/Participium",
   },
   {
   title: "Guess a Sentence(team of 1)",
@@ -70,6 +71,7 @@ export const projectsData = [
     "A microservice based file management system allowing users to upload, download, share and delete files based on their ROLE along with automatic AI generated summaries for each file.",
     tags: ["Kotlin","PostgreSQL","Docker", "Spring Boot", "MongoDB","Keycloak","React","MinIO","Kafka","Ollama AI"],
     imageUrl: fileManagerImg,
+    repoUrl: "https://github.com/SeverjanLici/File-Management-System",
   },
   {
     title: "Cooking App(team of 4)",
@@ -77,6 +79,7 @@ export const projectsData = [
     "A cooking app that allows users to search, share, save and create recipes. Users can also follow other users to receive notifications when they create new recipes.",
     tags: ["Firebase","Kotlin(Android Studio)","MVVM/MVI"],
     imageUrl: cookingAppImg,
+    repoUrl: "https://github.com/SeverjanLici/Cooking-App",
   },
   {
     title: "Portfolio Website(personal)",
@@ -84,6 +87,7 @@ export const projectsData = [
     "A responsive portfolio website showcasing my projects, skills, and experience.",
     tags: ["React", "TypeScript", "Tailwind", "Framer Motion"],
     imageUrl: portfolioImg,
+    repoUrl: "https://github.com/SeverjanLici/Portfolio",
   },
 ] as const;
 

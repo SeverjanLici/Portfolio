@@ -6,7 +6,7 @@ import { projectsData } from '@/lib/data'
 
 type projectProps = (typeof projectsData)[number]
 
-export function Project({ title, description, tags, imageUrl }: projectProps) {
+export function Project({ title, description, tags, imageUrl, repoUrl }: projectProps) {
   const ref = useRef<HTMLDivElement>(null)
 
   const {scrollYProgress} = useScroll({
@@ -17,14 +17,7 @@ export function Project({ title, description, tags, imageUrl }: projectProps) {
    const opacityProgress= useTransform(scrollYProgress,[0,1],[0.6,1])
 
 
-  return <motion.div
-   ref={ref} 
-        style={{
-          scale: scaleProgress,
-          opacity: opacityProgress, 
-        }}
-        className='group mb-3 sm:mb-8 last:mb-0 '>
-    <section 
+  const projectCard = <section 
         className="flex flex-col bg-gray-100 max-w-[42rem] border border-black/5 
                     overflow-hidden md:pr-8 relative md:h-[20rem]
                     rounded-lg
@@ -49,6 +42,15 @@ export function Project({ title, description, tags, imageUrl }: projectProps) {
                 
               md:group-even:group-hover:translate-y-3 
               md:group-even:group-hover:rotate-2"/>
-  </section> 
+  </section>
+
+  return <motion.div
+   ref={ref} 
+        style={{
+          scale: scaleProgress,
+          opacity: opacityProgress, 
+        }}
+        className='group mb-3 sm:mb-8 last:mb-0 '>
+    {repoUrl ? <a href={repoUrl} target="_blank" rel="noreferrer">{projectCard}</a> : projectCard}
   </motion.div>
 } 
