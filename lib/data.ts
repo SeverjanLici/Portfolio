@@ -1,10 +1,11 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import ParticipiumImg from "@/public/Participium.jpg";
+import hangedManImg from "@/public/hangedMan.jpg";
+import fileManagerImg from "@/public/rest2.webp";
+import cookingAppImg from "@/public/CookingApp.png";
+import portfolioImg from "@/public/Portfolio.png";
 
 export const links = [
   {
@@ -35,52 +36,54 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+    title: "B.Sc. Computer Engineering Graduate | Politecnico di Torino",
+    location: "Torino, To",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2020-2024",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    title: "Software Engineer | M.Sc. Graduate from Politecnico di Torino",
+    location: "Turin, To",
+    icon: React.createElement(LuGraduationCap),
+    date: "2024 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Participium(team of 6)",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Website for reporting any issues needing fixing in the city. People can report issues along with photos, locations, descriptions and types for the municipality to fix them.",
+    tags: ["React", "Tailwind", "Python","JavaScript","HTML","CSS", "Swagger/OpenAPI", "Docker", "Bash","Redis", "Agile(YouTrack)"],
+    imageUrl: ParticipiumImg,
   },
   {
-    title: "rmtDev",
+  title: "Guess a Sentence(team of 1)",
+  description:
+    "A timed word-puzzle game combining Hangman and Wheel of Fortune mechanics. Players manage a coin economy where each letter costs coins to use, racing a 60-second clock to reveal and solve secret sentences.",
+  tags: ["React", "Node.js", "Express", "SQLite", "Bootstrap"],
+  imageUrl: hangedManImg,
+},
+  {
+    title: "File Manager(team of 4)",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+    "A microservice based file management system allowing users to upload, download, share and delete files based on their ROLE along with automatic AI generated summaries for each file.",
+    tags: ["Kotlin","PostgreSQL","Docker", "Spring Boot", "MongoDB","Keycloak","React","MinIO","Kafka","Ollama AI"],
+    imageUrl: fileManagerImg,
   },
   {
-    title: "Word Analytics",
+    title: "Cooking App(team of 4)",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    "A cooking app that allows users to search, share, save and create recipes. Users can also follow other users to receive notifications when they create new recipes.",
+    tags: ["Firebase","Kotlin(Android Studio)","MVVM/MVI"],
+    imageUrl: cookingAppImg,
+  },
+  {
+    title: "Portfolio Website(personal)",
+    description:
+    "A responsive portfolio website showcasing my projects, skills, and experience.",
+    tags: ["React", "TypeScript", "Tailwind", "Framer Motion"],
+    imageUrl: portfolioImg,
   },
 ] as const;
 
@@ -94,14 +97,10 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
-  "Python",
-  "Django",
   "Framer Motion",
+  "Kotlin",
+  "Spring Boot",
+
 ] as const;

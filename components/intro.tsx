@@ -7,6 +7,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 
 export default function Intro() {
+  
   return (
     <section id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
       <motion.p
@@ -26,11 +27,13 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.1 }}
       >
-        <Link href="#contact" className="group bg-gray-900 text-white  px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition ">
+        <Link href="#contact" className="group flex items-center gap-2 rounded-full bg-gray-900 px-7 py-3 text-white outline-none transition hover:scale-110 hover:bg-gray-950 focus:scale-110 active:scale-105"
+          scroll={true}
+        >
           <span className="">
             Contact me here
           </span>
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          <BsArrowRight className="opacity-70 transition group-hover:translate-x-1" />
         </Link>
 
         <a href="/Severjan Lici CV.pdf" download className="group bg-white text-black  px-7 py-3 flex  items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-100 active:scale-105 transition cursor-pointer border border-black/10">
@@ -40,7 +43,12 @@ export default function Intro() {
           <HiDownload className="opacity-60 group-hover:translate-x-1 transition" />
         </a>
 
-        <a href="https://github.com/severjanlici" target="_blank" className="group bg-white text-black flex h-14 w-14 items-center justify-center rounded-full text-[1.35rem] outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-900 hover:bg-gray-100 active:scale-105 transition cursor-pointer border border-black/10">
+        <a href="https://github.com/severjanlici" target="_blank" 
+        className="group bg-white text-black flex h-14 w-14 
+        items-center justify-center rounded-full text-[1.35rem] 
+        outline-none focus:scale-[1.15] hover:scale-[1.15]
+         hover:text-gray-900 hover:bg-gray-100 active:scale-105 
+         transition cursor-pointer border border-black/10">
           <FaGithubSquare className="opacity-70 transition" />
         </a>
       </motion.div>

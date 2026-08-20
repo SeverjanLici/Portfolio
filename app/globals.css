@@ -1,2 +1,5 @@
 @import "tailwindcss";
 
+.border-black {
+  @apply border border-black/10;
+}
