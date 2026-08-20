@@ -64,6 +64,7 @@ export const projectsData = [
     "A timed word-puzzle game combining Hangman and Wheel of Fortune mechanics. Players manage a coin economy where each letter costs coins to use, racing a 60-second clock to reveal and solve secret sentences.",
   tags: ["React", "Node.js", "Express", "SQLite", "Bootstrap"],
   imageUrl: hangedManImg,
+  repoUrl: undefined,
 },
   {
     title: "File Manager(team of 4)",
