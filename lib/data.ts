@@ -54,7 +54,7 @@ export const projectsData = [
     title: "Participium(team of 6)",
     description:
       "Website for reporting any issues needing fixing in the city. People can report issues along with photos, locations, descriptions and types for the municipality to fix them.",
-    tags: ["React", "Tailwind", "Python","JavaScript","HTML","CSS", "Swagger/OpenAPI", "Docker", "Bash","Redis", "Agile(YouTrack)"],
+    tags: ["React", "Python","TypeScript","HTML","CSS", "Swagger/OpenAPI", "Docker", "Bash","Redis", "Agile(YouTrack)"],
     imageUrl: ParticipiumImg,
     repoUrl: "https://github.com/SeverjanLici/Participium",
   },
@@ -62,7 +62,7 @@ export const projectsData = [
   title: "Guess a Sentence(team of 1)",
   description:
     "A timed word-puzzle game combining Hangman and Wheel of Fortune mechanics. Players manage a coin economy where each letter costs coins to use, racing a 60-second clock to reveal and solve secret sentences.",
-  tags: ["React", "Node.js", "Express", "SQLite", "Bootstrap"],
+  tags: ["React","JavaScript", "Node.js", "Express", "SQLite", "Bootstrap"],
   imageUrl: hangedManImg,
   repoUrl: undefined,
 },
