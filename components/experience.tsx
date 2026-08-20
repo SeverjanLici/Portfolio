@@ -30,7 +30,7 @@ export default function Experience() {
                         background: 'white', 
                         font: '1.5rem' }}
                     >
-                        <h3 className="text-lg font-semibold capitalize leading-snug">{experience.title}</h3>
+                        <h3 className="text-lg font-semibold capitalize leading-snug text-black dark:text-white">{experience.title}</h3>
                         <p className="mt-2 text-sm font-normal text-gray-600">{experience.location}</p>
                     </VerticalTimelineElement>
                 ))
